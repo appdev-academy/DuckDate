@@ -1,6 +1,6 @@
 # DuckDate
 
-[![CI Status](http://img.shields.io/travis/appdev-academy/DuckDate.svg?style=flat)](https://travis-ci.org/Maksym Skliarov/DuckDate)
+[![CI Status](http://img.shields.io/travis/appdev-academy/DuckDate.svg?style=flat)](https://travis-ci.org/appdev-academy/DuckDate)
 [![Version](https://img.shields.io/cocoapods/v/DuckDate.svg?style=flat)](http://cocoapods.org/pods/DuckDate)
 [![License](https://img.shields.io/cocoapods/l/DuckDate.svg?style=flat)](http://cocoapods.org/pods/DuckDate)
 [![Platform](https://img.shields.io/cocoapods/p/DuckDate.svg?style=flat)](http://cocoapods.org/pods/DuckDate)
