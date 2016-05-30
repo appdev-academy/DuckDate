@@ -1,0 +1,6 @@
+framework module DuckDate {
+  umbrella header "DuckDate-umbrella.h"
+
+  export *
+  module * { export * }
+}

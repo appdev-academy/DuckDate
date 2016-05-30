@@ -1,0 +1,8 @@
+use_frameworks!
+
+abstract_target "DuckDate" do
+  pod 'DuckDate', :path => '../'
+  
+  target 'DuckDate_Example'
+  target 'DuckDate_Tests'
+end

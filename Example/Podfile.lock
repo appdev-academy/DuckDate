@@ -1,0 +1,16 @@
+PODS:
+  - DuckDate (0.5.0)
+
+DEPENDENCIES:
+  - DuckDate (from `../`)
+
+EXTERNAL SOURCES:
+  DuckDate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DuckDate: ca75321a7ed958c6598066bdeb6e8f6deff50dc5
+
+PODFILE CHECKSUM: 79c03d8bfc2449034c838a9cfd9fe0ca49d8cc0c
+
+COCOAPODS: 1.0.0
