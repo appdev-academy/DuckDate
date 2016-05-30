@@ -14,8 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		796FDCBC823A36DAAD873474 /* Pods_DuckDate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513A2E892143E7483731D521 /* Pods_DuckDate_Example.framework */; };
-		8DE79E90FC7DBDAA87F5C7E3 /* Pods_DuckDate_DuckDate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5827A743FEE99DE7DCD6DD7 /* Pods_DuckDate_DuckDate_Example.framework */; };
+		8388048E9E53FE523AD89600 /* Pods_DuckDate_DuckDate_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5827A743FEE99DE7DCD6DD7 /* Pods_DuckDate_DuckDate_Example.framework */; };
 		EEBD0767A3C38087A0885F36 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,8 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				796FDCBC823A36DAAD873474 /* Pods_DuckDate_Example.framework in Frameworks */,
-				8DE79E90FC7DBDAA87F5C7E3 /* Pods_DuckDate_DuckDate_Example.framework in Frameworks */,
+				8388048E9E53FE523AD89600 /* Pods_DuckDate_DuckDate_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
