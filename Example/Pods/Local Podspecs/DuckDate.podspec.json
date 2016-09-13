@@ -1,6 +1,6 @@
 {
   "name": "DuckDate",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "summary": "NSDate extension for Swift",
   "homepage": "https://github.com/appdev-academy/DuckDate.git",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/appdev-academy/DuckDate.git",
-    "tag": "0.5.0"
+    "tag": "0.6.0"
   },
   "social_media_url": "https://twitter.com/AppDev_Academy",
   "platforms": {
