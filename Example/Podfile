@@ -5,4 +5,5 @@ abstract_target "DuckDate" do
   
   target 'DuckDate_Example'
   target 'DuckDate_Tests'
+  target 'DuckDate_macOS'
 end
