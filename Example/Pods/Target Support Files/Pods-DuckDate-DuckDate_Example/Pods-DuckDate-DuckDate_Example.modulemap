@@ -1,6 +1,0 @@
-framework module Pods_DuckDate_DuckDate_Example {
-  umbrella header "Pods-DuckDate-DuckDate_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

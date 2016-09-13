@@ -3,7 +3,7 @@ use_frameworks!
 abstract_target "DuckDate" do
   pod 'DuckDate', :path => '../'
   
-  target 'DuckDate_Example'
-  target 'DuckDate_macOS'
-  target 'DuckDate_Tests'
+  target 'DuckDate-iOS'
+  target 'DuckDate-macOS'
+  target 'DuckDate-Tests'
 end
