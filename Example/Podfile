@@ -4,6 +4,6 @@ abstract_target "DuckDate" do
   pod 'DuckDate', :path => '../'
   
   target 'DuckDate_Example'
-  target 'DuckDate_Tests'
   target 'DuckDate_macOS'
+  target 'DuckDate_Tests'
 end

@@ -11,10 +11,9 @@ import DuckDate
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
-
-
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         print("=================================================")
@@ -64,11 +63,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         print("=================================================")
     }
-
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
-
 }
-
