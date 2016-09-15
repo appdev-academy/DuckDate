@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DuckDate_macOS
+//  DuckDate-macOS
 //
-//  Created by Yura Voevodin on 13.09.16.
+//  Created by Maksym Skliarov on 9/13/16.
 //  Copyright © 2016 CocoaPods. All rights reserved.
 //
 
@@ -11,12 +11,10 @@ import DuckDate
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     @IBOutlet weak var window: NSWindow!
-
-
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
         print("=================================================")
         
         let currentDate = NSDate()
@@ -64,11 +62,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         print("=================================================")
     }
-
+    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
-
 }
-
