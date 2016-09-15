@@ -11,33 +11,33 @@ import Foundation
 /**
     Class for setting first day of the week
 */
-public class DuckDate {
+open class DuckDate {
     
     /**
         Weekday enum Monday-Sunday
     */
     public enum Weekday: Int {
-        case Monday = 2
-        case Tuesday = 3
-        case Wednesday = 4
-        case Thursday = 5
-        case Friday = 6
-        case Saturday = 7
-        case Sunday = 1
+        case monday = 2
+        case tuesday = 3
+        case wednesday = 4
+        case thursday = 5
+        case friday = 6
+        case saturday = 7
+        case sunday = 1
     }
     
     /**
         First day of the week, be default is Monday
     */
-    public static var firstDayOfTheWeek: Weekday = .Monday
+    open static var firstDayOfTheWeek: Weekday = .monday
 }
 
-public extension NSCalendar {
+public extension Calendar {
     /**
         Returns Gregorian NSCalendar instance
     */
-    public class var gregorianCalendar: NSCalendar {
-        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+    public static var gregorianCalendar: Calendar {
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.firstWeekday = DuckDate.firstDayOfTheWeek.rawValue
         return calendar
     }
@@ -47,15 +47,15 @@ public extension NSCalendar {
     NSDate extension with handy helpers to work with dates
     WARNING: This library works only with Gregorian calendar
 */
-public extension NSDate {
+public extension Date {
     /**
         Enumeration of available date components
     */
     internal enum DateComponent {
-        case Day
-        case Week
-        case Month
-        case Year
+        case day
+        case week
+        case month
+        case year
     }
     
     // MARK: - NSDate to String
@@ -64,45 +64,45 @@ public extension NSDate {
         String representation of date with format "dd"
     */
     public var dayNumberString: String {
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd"
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self)
     }
     
     /**
         String representation of date with format "yyyy"
     */
     public var yearString: String {
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy"
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self)
     }
     
     /**
         String representation of date with format "MM"
     */
     public var monthNumberString: String {
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM"
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self)
     }
     
     /**
         String representation of date with format "LLLL"
     */
     public var monthName: String {
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "LLLL"
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self)
     }
     
     /**
         String representation of date with format "yyyy-MM-dd"
     */
     public var shortDateString: String {
-        let dateFormatter = NSDateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        return dateFormatter.stringFromDate(self)
+        return dateFormatter.string(from: self)
     }
     
     // MARK: - NSCalendarUnit
@@ -112,10 +112,10 @@ public extension NSDate {
      
         - parameter calendarUnit: NSCalendarUnit object
     */
-    public func startOfCalendarUnit(calendarUnit: NSCalendarUnit) -> NSDate {
+    public func startOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
         var startDate: NSDate?
-        NSCalendar.gregorianCalendar.rangeOfUnit(calendarUnit, startDate: &startDate, interval: nil, forDate: self)
-        return startDate!
+        (Calendar.gregorianCalendar as NSCalendar).range(of: calendarUnit, start: &startDate, interval: nil, for: self)
+        return startDate! as Date
     }
     
     /**
@@ -123,11 +123,11 @@ public extension NSDate {
      
         - parameter calendarUnit: NSCalendarUnit object
     */
-    public func endOfCalendarUnit(calendarUnit: NSCalendarUnit) -> NSDate {
+    public func endOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
         var startDate: NSDate?
-        var timeInterval: NSTimeInterval = 0
-        NSCalendar.gregorianCalendar.rangeOfUnit(calendarUnit, startDate: &startDate, interval: &timeInterval, forDate: self)
-        return startDate!.dateByAddingTimeInterval(timeInterval)
+        var timeInterval: TimeInterval = 0
+        (Calendar.gregorianCalendar as NSCalendar).range(of: calendarUnit, start: &startDate, interval: &timeInterval, for: self)
+        return startDate!.addingTimeInterval(timeInterval) as Date
     }
     
     /**
@@ -136,22 +136,22 @@ public extension NSDate {
         - parameter component: DateComponent to add (e.g. week)
         - parameter count: number of DateComponents to add (e.g 3 weeks)
     */
-    internal func addDateComponent(component: DateComponent, count: Int) -> NSDate {
-        let calendar = NSCalendar.gregorianCalendar
-        let components = NSDateComponents()
+    internal func addDateComponent(_ component: DateComponent, count: Int) -> Date {
+        let calendar = Calendar.gregorianCalendar
+        var components = DateComponents()
         
         switch component {
-            case .Day:
+            case .day:
                 components.day = count
-            case .Week:
+            case .week:
                 components.weekOfYear = count
-            case .Month:
+            case .month:
                 components.month = count
-            case .Year:
+            case .year:
                 components.year = count
         }
         
-        return calendar.dateByAddingComponents(components, toDate: self, options: [])!
+        return (calendar as NSCalendar).date(byAdding: components, to: self, options: [])!
     }
     
     // MARK: - Add or remove DateComponent
@@ -159,9 +159,9 @@ public extension NSDate {
     /**
         One day after current date
     */
-    public var plusOneDay: NSDate {
+    public var plusOneDay: Date {
         get {
-            return self.addDateComponent(.Day, count: 1)
+            return self.addDateComponent(.day, count: 1)
         }
     }
     
@@ -170,16 +170,16 @@ public extension NSDate {
      
         - parameter numberOfDays: Number of days to increase current date
     */
-    public func plusDays(numberOfDays: Int) -> NSDate {
-        return self.addDateComponent(.Day, count: numberOfDays)
+    public func plusDays(_ numberOfDays: Int) -> Date {
+        return self.addDateComponent(.day, count: numberOfDays)
     }
     
     /**
         One day before current date
     */
-    public var minusOneDay: NSDate {
+    public var minusOneDay: Date {
         get {
-            return self.addDateComponent(.Day, count: -1)
+            return self.addDateComponent(.day, count: -1)
         }
     }
     
@@ -188,16 +188,16 @@ public extension NSDate {
      
         - parameter numberOfDays: Number of days to decrease current date
     */
-    public func minusDays(numberOfDays: Int) -> NSDate {
-        return self.addDateComponent(.Day, count: -numberOfDays)
+    public func minusDays(_ numberOfDays: Int) -> Date {
+        return self.addDateComponent(.day, count: -numberOfDays)
     }
     
     /**
         One week after current date
     */
-    public var plusOneWeek: NSDate {
+    public var plusOneWeek: Date {
         get {
-            return self.addDateComponent(.Week, count: 1)
+            return self.addDateComponent(.week, count: 1)
         }
     }
     
@@ -206,16 +206,16 @@ public extension NSDate {
      
         - parameter numberOfWeeks: Number of weeks to increase current date
     */
-    public func plusWeeks(numberOfWeeks: Int) -> NSDate {
-        return self.addDateComponent(.Week, count: numberOfWeeks)
+    public func plusWeeks(_ numberOfWeeks: Int) -> Date {
+        return self.addDateComponent(.week, count: numberOfWeeks)
     }
     
     /**
         One week before current date
     */
-    public var minusOneWeek: NSDate {
+    public var minusOneWeek: Date {
         get {
-            return self.addDateComponent(.Week, count: -1)
+            return self.addDateComponent(.week, count: -1)
         }
     }
     
@@ -224,16 +224,16 @@ public extension NSDate {
      
         - parameter numberOfWeeks: Number of weeks to decrease current date
     */
-    public func minusWeeks(numberOfWeeks: Int) -> NSDate {
-        return self.addDateComponent(.Week, count: -numberOfWeeks)
+    public func minusWeeks(_ numberOfWeeks: Int) -> Date {
+        return self.addDateComponent(.week, count: -numberOfWeeks)
     }
     
     /**
         One month after current date
     */
-    public var plusOneMonth: NSDate {
+    public var plusOneMonth: Date {
         get {
-            return self.addDateComponent(.Month, count: 1)
+            return self.addDateComponent(.month, count: 1)
         }
     }
     
@@ -242,16 +242,16 @@ public extension NSDate {
      
         - parameter numberOfMonths: Number of months to increase current date
     */
-    public func plusMonths(numberOfMonths: Int) -> NSDate {
-        return self.addDateComponent(.Month, count: numberOfMonths)
+    public func plusMonths(_ numberOfMonths: Int) -> Date {
+        return self.addDateComponent(.month, count: numberOfMonths)
     }
     
     /**
         One month before current date
     */
-    public var minusOneMonth: NSDate {
+    public var minusOneMonth: Date {
         get {
-            return self.addDateComponent(.Month, count: -1)
+            return self.addDateComponent(.month, count: -1)
         }
     }
     
@@ -260,16 +260,16 @@ public extension NSDate {
      
         - parameter numberOfMonths: Number of months to decrease current date
     */
-    public func minusMonths(numberOfMonths: Int) -> NSDate {
-        return self.addDateComponent(.Month, count: -numberOfMonths)
+    public func minusMonths(_ numberOfMonths: Int) -> Date {
+        return self.addDateComponent(.month, count: -numberOfMonths)
     }
     
     /**
         One year after current date
     */
-    public var plusOneYear: NSDate {
+    public var plusOneYear: Date {
         get {
-            return self.addDateComponent(.Year, count: 1)
+            return self.addDateComponent(.year, count: 1)
         }
     }
     
@@ -278,16 +278,16 @@ public extension NSDate {
      
         - parameter numberOfYears: Number of years to increase current date
     */
-    public func plusYears(numberOfYears: Int) -> NSDate {
-        return self.addDateComponent(.Year, count: numberOfYears)
+    public func plusYears(_ numberOfYears: Int) -> Date {
+        return self.addDateComponent(.year, count: numberOfYears)
     }
     
     /**
         One year before current date
     */
-    public var minusOneYear: NSDate {
+    public var minusOneYear: Date {
         get {
-            return self.addDateComponent(.Year, count: -1)
+            return self.addDateComponent(.year, count: -1)
         }
     }
     
@@ -296,8 +296,8 @@ public extension NSDate {
      
         - parameter numberOfYears: Number of years to decrease current date
     */
-    public func minusYears(numberOfYears: Int) -> NSDate {
-        return self.addDateComponent(.Year, count: -numberOfYears)
+    public func minusYears(_ numberOfYears: Int) -> Date {
+        return self.addDateComponent(.year, count: -numberOfYears)
     }
     
     // MARK: - Start/end of the day, week, month, year
@@ -305,72 +305,72 @@ public extension NSDate {
     /**
         Date at the start of the day
     */
-    public var startOfDay: NSDate {
+    public var startOfDay: Date {
         get {
-            return self.startOfCalendarUnit(.Day)
+            return self.startOfCalendarUnit(.day)
         }
     }
     
     /**
         Date at the end of the day
     */
-    public var endOfDay: NSDate {
+    public var endOfDay: Date {
         get {
-            return self.endOfCalendarUnit(.Day)
+            return self.endOfCalendarUnit(.day)
         }
     }
     
     /**
         Date at the start of the week
     */
-    public var startOfWeek: NSDate {
+    public var startOfWeek: Date {
         get {
-            return self.startOfCalendarUnit(.WeekOfYear)
+            return self.startOfCalendarUnit(.weekOfYear)
         }
     }
     
     /**
         Date at the end of the week
     */
-    public var endOfWeek: NSDate {
+    public var endOfWeek: Date {
         get {
-            return self.endOfCalendarUnit(.WeekOfYear)
+            return self.endOfCalendarUnit(.weekOfYear)
         }
     }
     
     /**
         Date at the start of the month
     */
-    public var startOfMonth: NSDate {
+    public var startOfMonth: Date {
         get {
-            return self.startOfCalendarUnit(.Month)
+            return self.startOfCalendarUnit(.month)
         }
     }
     
     /**
         Date at the end of the month
     */
-    public var endOfMonth: NSDate {
+    public var endOfMonth: Date {
         get {
-            return self.endOfCalendarUnit(.Month)
+            return self.endOfCalendarUnit(.month)
         }
     }
     
     /**
         Date at the start of the year
     */
-    public var startOfYear: NSDate {
+    public var startOfYear: Date {
         get {
-            return self.startOfCalendarUnit(.Year)
+            return self.startOfCalendarUnit(.year)
         }
     }
     
     /**
         Date at the end of the year
     */
-    public var endOfYear: NSDate {
+    public var endOfYear: Date {
         get {
-            return self.endOfCalendarUnit(.Year)
+            return self.endOfCalendarUnit(.year)
         }
     }
     
@@ -381,8 +381,8 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func isAfterDate(date: NSDate) -> Bool {
-        return self.compare(date) == NSComparisonResult.OrderedDescending
+    public func isAfterDate(_ date: Date) -> Bool {
+        return self.compare(date) == ComparisonResult.orderedDescending
     }
     
     /**
@@ -390,8 +390,8 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func isBeforeDate(date: NSDate) -> Bool {
-        return self.compare(date) == NSComparisonResult.OrderedAscending
+    public func isBeforeDate(_ date: Date) -> Bool {
+        return self.compare(date) == ComparisonResult.orderedAscending
     }
     
     /**
@@ -399,8 +399,8 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func equalToDate(date: NSDate) -> Bool {
-        return self.compare(date) == NSComparisonResult.OrderedSame
+    public func equalToDate(_ date: Date) -> Bool {
+        return self.compare(date) == ComparisonResult.orderedSame
     }
     
     // MARK: - Components between dates
@@ -410,9 +410,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func daysSinceDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Day, fromDate: date, toDate: self, options: [])
-        return components.day
+    public func daysSinceDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.day, from: date, to: self, options: [])
+        return components.day!
     }
     
     /**
@@ -420,9 +420,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func daysBeforeDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Day, fromDate: self, toDate: date, options: [])
-        return components.day
+    public func daysBeforeDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.day, from: self, to: date, options: [])
+        return components.day!
     }
     
     /**
@@ -430,9 +430,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func weeksSinceDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.WeekOfYear, fromDate: date, toDate: self, options: [])
-        return components.weekOfYear
+    public func weeksSinceDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.weekOfYear, from: date, to: self, options: [])
+        return components.weekOfYear!
     }
     
     /**
@@ -440,9 +440,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func weeksBeforeDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.WeekOfYear, fromDate: self, toDate: date, options: [])
-        return components.weekOfYear
+    public func weeksBeforeDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.weekOfYear, from: self, to: date, options: [])
+        return components.weekOfYear!
     }
     
     /**
@@ -450,9 +450,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func monthsSinceDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Month, fromDate: date, toDate: self, options: [])
-        return components.month
+    public func monthsSinceDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.month, from: date, to: self, options: [])
+        return components.month!
     }
     
     /**
@@ -460,9 +460,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func monthsBeforeDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Month, fromDate: self, toDate: date, options: [])
-        return components.month
+    public func monthsBeforeDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.month, from: self, to: date, options: [])
+        return components.month!
     }
     
     /**
@@ -470,9 +470,9 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func yearsSinceDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Year, fromDate: date, toDate: self, options: [])
-        return components.year
+    public func yearsSinceDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.year, from: date, to: self, options: [])
+        return components.year!
     }
     
     /**
@@ -480,8 +480,8 @@ public extension NSDate {
      
         - parameter date: NSDate object to compare
     */
-    public func yearsBeforeDate(date: NSDate) -> Int {
-        let components = NSCalendar.gregorianCalendar.components(NSCalendarUnit.Year, fromDate: self, toDate: date, options: [])
-        return components.year
+    public func yearsBeforeDate(_ date: Date) -> Int {
+        let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.year, from: self, to: date, options: [])
+        return components.year!
     }
 }

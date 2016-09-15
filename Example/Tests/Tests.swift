@@ -16,7 +16,7 @@ class Tests: XCTestCase {
     
     func testEndOfWeek() {
         // Current date
-        let date = NSDate()
+        let date = Date()
         // End of week
         let endOfWeek = date.endOfWeek
         // Start of week + 1 day + 6 days

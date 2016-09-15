@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         
         print("=================================================")
         
-        let currentDate = NSDate()
+        let currentDate = Date()
         print("Current date: ", currentDate)
         print("Start of day: ", currentDate.startOfDay)
         print("End of day: ", currentDate.endOfDay)
@@ -25,14 +25,14 @@ class ViewController: UIViewController {
         print("Start of month: ", currentDate.startOfMonth)
         print("End of month: ", currentDate.endOfMonth)
         
-        let components = NSDateComponents()
+        var components = DateComponents()
         components.day = 27
         components.month = 2
         components.year = 1992
         
-        let calendar = NSCalendar.gregorianCalendar
+        let calendar = Calendar.gregorianCalendar
         
-        if let myBirthday = calendar.dateFromComponents(components) {
+        if let myBirthday = calendar.date(from: components) {
             print("=================================================")
             
             print("Birthday:", myBirthday)
@@ -49,14 +49,14 @@ class ViewController: UIViewController {
         
         print("=================================================")
         
-        DuckDate.firstDayOfTheWeek = .Monday
-        var daysSinceStartOfTheWeek = NSDate().startOfWeek.daysBeforeDate(NSDate())
+        DuckDate.firstDayOfTheWeek = .monday
+        var daysSinceStartOfTheWeek = Date().startOfWeek.daysBeforeDate(Date())
         print("Days since start of the week (Monday):", daysSinceStartOfTheWeek)
         
         print("=================================================")
         
-        DuckDate.firstDayOfTheWeek = .Sunday
-        daysSinceStartOfTheWeek = NSDate().startOfWeek.daysBeforeDate(NSDate())
+        DuckDate.firstDayOfTheWeek = .sunday
+        daysSinceStartOfTheWeek = Date().startOfWeek.daysBeforeDate(Date())
         print("Days since start of the week (Sunday):", daysSinceStartOfTheWeek)
         
         print("=================================================")

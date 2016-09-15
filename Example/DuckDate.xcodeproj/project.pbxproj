@@ -14,7 +14,6 @@
 		B4C8C9481D8813AD000B005B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9401D8813AD000B005B /* LaunchScreen.xib */; };
 		B4C8C9491D8813AD000B005B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9421D8813AD000B005B /* Main.storyboard */; };
 		B4C8C94A1D8813AD000B005B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9441D8813AD000B005B /* Images.xcassets */; };
-		B4C8C94B1D8813AD000B005B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9451D8813AD000B005B /* Info.plist */; };
 		B4C8C94C1D8813AD000B005B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C8C9461D8813AD000B005B /* ViewController.swift */; };
 		B4E89B6B1D88110E00A3406F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E89B6A1D88110E00A3406F /* AppDelegate.swift */; };
 		B4E89B6D1D88110E00A3406F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E89B6C1D88110E00A3406F /* Assets.xcassets */; };
@@ -284,18 +283,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 					B4E89B671D88110E00A3406F = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -324,7 +326,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C8C94B1D8813AD000B005B /* Info.plist in Resources */,
 				B4C8C94A1D8813AD000B005B /* Images.xcassets in Resources */,
 				B4C8C9481D8813AD000B005B /* LaunchScreen.xib in Resources */,
 				B4C8C9491D8813AD000B005B /* Main.storyboard in Resources */,
@@ -564,8 +565,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -609,8 +612,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -629,6 +634,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -637,12 +643,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/DuckDate-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -650,12 +658,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/DuckDate-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -663,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C21A9783D8D0764985CF14B7 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -675,6 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -682,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80020BEF26A0566EF8DD9C39 /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -690,6 +703,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -697,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE63B0BB152BD1AE21969120 /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -708,6 +723,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -715,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C6B147583C3659D4B3094A7 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -725,6 +742,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
