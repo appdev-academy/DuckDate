@@ -11,6 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 8.0+
+macOS 10.11+
+Swift 3.0+
+
 ## Installation
 
 DuckDate is available through [CocoaPods](http://cocoapods.org). To install
