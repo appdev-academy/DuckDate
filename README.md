@@ -11,9 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS 8.0+
-macOS 10.11+
-Swift 3.0+
+- iOS 8.0+
+- macOS 10.11+
+- Swift 3.0+
 
 ## Installation
 
@@ -26,8 +26,8 @@ pod 'DuckDate'
 
 ## Authors
 
-Maksym Skliarov https://github.com/skliarov
-Yura Voevodin https://github.com/yura-voevodin
+- Maksym Skliarov https://github.com/skliarov
+- Yura Voevodin https://github.com/yura-voevodin
 
 ## License
 
