@@ -385,7 +385,7 @@ public extension Date {
     return self.compare(date) == .orderedDescending
   }
   
-  public func isGreaterThanDate(_ date: Date) {
+  public func isGreaterThanDate(_ date: Date) -> Bool {
     return self.isAfterDate(date)
   }
   
@@ -393,7 +393,7 @@ public extension Date {
     return self.compare(date) == .orderedDescending || self.compare(date) == .orderedSame
   }
   
-  public func isGreaterOrEqualToDate(_ date: Date) {
+  public func isGreaterOrEqualToDate(_ date: Date) -> Bool {
     return self.isOnOrAfterDate(date)
   }
   
@@ -406,7 +406,7 @@ public extension Date {
     return self.compare(date) == .orderedAscending
   }
   
-  public func isLessThanDate(_ date: Date) {
+  public func isLessThanDate(_ date: Date) -> Bool {
     return self.isBeforeDate(date)
   }
   
@@ -414,7 +414,7 @@ public extension Date {
     return self.compare(date) == .orderedAscending || self.compare(date) == .orderedSame
   }
   
-  public func isLessOrEqualToDate(_ date: Date) {
+  public func isLessOrEqualToDate(_ date: Date) -> Bool {
     return self.isOnOrBeforeDate(date)
   }
   
