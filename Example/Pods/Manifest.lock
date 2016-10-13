@@ -1,15 +1,15 @@
 PODS:
-  - DuckDate (0.6.0)
+  - DuckDate (1.0.0)
 
 DEPENDENCIES:
   - DuckDate (from `../`)
 
 EXTERNAL SOURCES:
   DuckDate:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  DuckDate: 77f880bc36c29eb7d2b6095fa3dd361fe44e38ce
+  DuckDate: 5edef1648c244854773607ec3ec6f15d58a1b049
 
 PODFILE CHECKSUM: e1d90b920a5eca068b4d07d4fb8f5a20ad9cd51a
 
