@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		3699D1C49CD4AAE3F0E36A808228CD53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4621BFDEEC06492083D7FB5DD663135D /* Cocoa.framework */; };
 		3DDCAA4D8A59EEF565B9595444CC0072 /* Pods-DuckDate-DuckDate-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D34821358FD4C40D989687D4011796A /* Pods-DuckDate-DuckDate-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4036FE7E76C3EE14CF7963FC1272AD44 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7492F27B8664B76669C42712DD69D9 /* NSDate.swift */; };
+		4036FE7E76C3EE14CF7963FC1272AD44 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7492F27B8664B76669C42712DD69D9 /* Date.swift */; };
 		4AC7F05E447FF0F23EF2F3CFBF2BED54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2F355F550B6A9F86194BB84D41A8CE /* Foundation.framework */; };
 		55F53252AF369BE129B82618D1D16701 /* DuckDate-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B52538EFEF0FF556B110E5905E68BBC5 /* DuckDate-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		560B71F40C98B935115C13AD08ED3072 /* Pods-DuckDate-DuckDate-Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 250C32C2DD52CC325686479C7964E1C3 /* Pods-DuckDate-DuckDate-Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		658CB28FEFFD8FE23E1076B890884649 /* Pods-DuckDate-DuckDate-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4A01CA385C9F1B1941116BD6D3EB2B /* Pods-DuckDate-DuckDate-iOS-dummy.m */; };
 		808A55A09B20AFE8837C9A90DB8584E9 /* DuckDate-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC8D252CA9A7A83A015DF3E6FF439462 /* DuckDate-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9937DE37744854F7D720ED7ADAFB8357 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7492F27B8664B76669C42712DD69D9 /* NSDate.swift */; };
+		9937DE37744854F7D720ED7ADAFB8357 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7492F27B8664B76669C42712DD69D9 /* Date.swift */; };
 		9F88BC4B368D79D85BB76ED32F640C2F /* Pods-DuckDate-DuckDate-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4604B7C28E645B7A42F3D97EDAE8412 /* Pods-DuckDate-DuckDate-Tests-dummy.m */; };
 		9FC064E0A05E21F706A9677017CF491C /* Pods-DuckDate-DuckDate-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD85AA18941A21266A4039ED25E13EA9 /* Pods-DuckDate-DuckDate-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A49D1A80A2C189F756659D43A75E8770 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2F355F550B6A9F86194BB84D41A8CE /* Foundation.framework */; };
@@ -55,7 +55,7 @@
 		01615C5200C62683A0D73C767F19A6CD /* Pods-DuckDate-DuckDate-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DuckDate-DuckDate-iOS-resources.sh"; sourceTree = "<group>"; };
 		21ADFD23765BA8805517A90484C3C11D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250C32C2DD52CC325686479C7964E1C3 /* Pods-DuckDate-DuckDate-Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DuckDate-DuckDate-Tests-umbrella.h"; sourceTree = "<group>"; };
-		2A7492F27B8664B76669C42712DD69D9 /* NSDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		2A7492F27B8664B76669C42712DD69D9 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		2C46143EA717EB5F4A343061C06C4C0E /* Pods-DuckDate-DuckDate-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DuckDate-DuckDate-Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2EB430550B3B2F364DBEA9DDF76B11EB /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		32DB1B2CB3EDD35EF85FD5F7A67EFF76 /* Pods-DuckDate-DuckDate-macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DuckDate-DuckDate-macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		7CA143A6B212EBD1F9132091CD193008 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2A7492F27B8664B76669C42712DD69D9 /* NSDate.swift */,
+				2A7492F27B8664B76669C42712DD69D9 /* Date.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -504,7 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5DB83347CCF80ED4B4A60EB76EE644C /* DuckDate-OSX-dummy.m in Sources */,
-				9937DE37744854F7D720ED7ADAFB8357 /* NSDate.swift in Sources */,
+				9937DE37744854F7D720ED7ADAFB8357 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +513,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C1AF7BFCF9492F3CD50C3BA0385DA7 /* DuckDate-iOS-dummy.m in Sources */,
-				4036FE7E76C3EE14CF7963FC1272AD44 /* NSDate.swift in Sources */,
+				4036FE7E76C3EE14CF7963FC1272AD44 /* Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
