@@ -183,7 +183,7 @@ public extension Date {
   
   /// Decrease current date by multiple seconds
   ///
-  /// - Parameter numberOfMinutes: Number of seconds to decrease current date
+  /// - Parameter numberOfSeconds: Number of seconds to decrease current date
   /// - Returns: Updated date
   public func minusSeconds(_ numberOfSeconds: Int) -> Date {
     return self.addDateComponent(.second, count: -numberOfSeconds)
