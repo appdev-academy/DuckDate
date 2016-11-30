@@ -48,6 +48,8 @@ public extension Date {
   
   /// Enumeration of available date components
   internal enum DateComponent {
+    case second
+    case minute
     case hour
     case day
     case week
@@ -92,6 +94,19 @@ public extension Date {
     return dateFormatter.string(from: self)
   }
   
+  /// Get suffix of the day for date
+  public var daySuffix: String {
+    let calendar = Calendar.current
+    let dayOfMonth = calendar.component(.day, from: self)
+    
+    switch dayOfMonth {
+    case 1, 21, 31: return "st"
+    case 2, 22: return "nd"
+    case 3, 23: return "rd"
+    default: return "th"
+    }
+  }
+  
   // MARK: NSCalendar.Unit
   
   /// Get Date at the start of calendar unit
@@ -128,6 +143,10 @@ public extension Date {
     var components = DateComponents()
     
     switch component {
+    case .second:
+      components.second = count
+    case .minute:
+      components.minute = count
     case .hour:
       components.hour = count
     case .day:
@@ -143,6 +162,58 @@ public extension Date {
   }
   
   // MARK: Add or remove DateComponent
+  
+  /// One second after current date
+  public var plusOneSecond: Date {
+    return self.addDateComponent(.second, count: 1)
+  }
+  
+  /// Increase current date by multiple seconds
+  ///
+  /// - Parameter numberOfSeconds: Number of seconds to increase current date
+  /// - Returns: Updated date
+  public func plusSeconds(_ numberOfSeconds: Int) -> Date {
+    return self.addDateComponent(.second, count: numberOfSeconds)
+  }
+  
+  /// One second before current date
+  public var minusOneSecond: Date {
+    return self.addDateComponent(.second, count: -1)
+  }
+  
+  /// Decrease current date by multiple seconds
+  ///
+  /// - Parameter numberOfMinutes: Number of seconds to decrease current date
+  /// - Returns: Updated date
+  public func minusSeconds(_ numberOfSeconds: Int) -> Date {
+    return self.addDateComponent(.second, count: -numberOfSeconds)
+  }
+  
+  /// One minute after current date
+  public var plusOneMinute: Date {
+    return self.addDateComponent(.minute, count: 1)
+  }
+  
+  /// Increase current date by multiple minutes
+  ///
+  /// - Parameter numberOfMinutes: Number of minutes to increase current date
+  /// - Returns: Updated date
+  public func plusMinutes(_ numberOfMinutes: Int) -> Date {
+    return self.addDateComponent(.minute, count: numberOfMinutes)
+  }
+  
+  /// One minute before current date
+  public var minusOneMinute: Date {
+    return self.addDateComponent(.minute, count: -1)
+  }
+  
+  /// Decrease current date by multiple minutes
+  ///
+  /// - Parameter numberOfMinutes: Number of minutes to decrease current date
+  /// - Returns: Updated date
+  public func minusMinutes(_ numberOfMinutes: Int) -> Date {
+    return self.addDateComponent(.minute, count: -numberOfMinutes)
+  }
   
   /// One hour after current date
   public var plusOneHour: Date {
