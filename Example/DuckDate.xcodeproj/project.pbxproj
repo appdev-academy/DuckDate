@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38272F49E00BDDB6ED7681B0 /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A63CBB090293B5E6F3AB9B /* Pods_DuckDate_DuckDate_macOS.framework */; };
 		4E6A414508743E8D30B1FDFB /* Pods_DuckDate_DuckDate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA494370CD658709A63AE9 /* Pods_DuckDate_DuckDate_iOS.framework */; };
+		5D5172D6ADC039CDE6CE83D9 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A45BD1F5FDC0AB81C5EDEC1D /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A63CBB090293B5E6F3AB9B /* Pods_DuckDate_DuckDate_macOS.framework */; };
 		B4C8C9471D8813AD000B005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C8C93F1D8813AD000B005B /* AppDelegate.swift */; };
 		B4C8C9481D8813AD000B005B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9401D8813AD000B005B /* LaunchScreen.xib */; };
 		B4C8C9491D8813AD000B005B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9421D8813AD000B005B /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		B4E89B6B1D88110E00A3406F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E89B6A1D88110E00A3406F /* AppDelegate.swift */; };
 		B4E89B6D1D88110E00A3406F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E89B6C1D88110E00A3406F /* Assets.xcassets */; };
 		B4E89B701D88110E00A3406F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4E89B6E1D88110E00A3406F /* MainMenu.xib */; };
-		EEBD0767A3C38087A0885F36 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,8 @@
 		0A2F4D17F3D47DB87EC9E70F /* Pods-DuckDate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Tests/Pods-DuckDate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0F7312DF1271925B2CABC8FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		10D60BB751F6544BEB82C9C2 /* DuckDate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DuckDate.podspec; path = ../DuckDate.podspec; sourceTree = "<group>"; };
-		1C6B147583C3659D4B3094A7 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		218CDB5BE3701E6B85B2CF86 /* Pods-DuckDate-DuckDate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Tests/Pods-DuckDate-DuckDate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC7C151FBB07A5D1A5C3C29 /* Pods-DuckDate-DuckDate_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_macOS/Pods-DuckDate-DuckDate_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		513A2E892143E7483731D521 /* Pods_DuckDate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* DuckDate-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DuckDate-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,12 +47,12 @@
 		62DF4D5C141790DC90751827 /* Pods-DuckDate-DuckDate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Example/Pods-DuckDate-DuckDate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7C8778BC3F4E0FEDBE407C26 /* Pods-DuckDate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Example/Pods-DuckDate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		80020BEF26A0566EF8DD9C39 /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		81845EC59B7FBF565FBBEBC0 /* Pods-DuckDate-DuckDate_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_macOS/Pods-DuckDate-DuckDate_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8564FA679C85DB8B446C56C1 /* Pods-DuckDate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Example/Pods-DuckDate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		96567341BD1081D090C11D64 /* Pods_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99588255DF48CA7DB6A57622 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		AFAA494370CD658709A63AE9 /* Pods_DuckDate_DuckDate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C8C93F1D8813AD000B005B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C8C9411D8813AD000B005B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -67,11 +67,11 @@
 		B4E89B711D88110E00A3406F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5827A743FEE99DE7DCD6DD7 /* Pods_DuckDate_DuckDate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA9D3EF76C3D1ECA5444571 /* Pods-DuckDate-DuckDate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Example/Pods-DuckDate-DuckDate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C21A9783D8D0764985CF14B7 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D4947958894B3DFF3740F043 /* Pods-DuckDate-DuckDate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Tests/Pods-DuckDate-DuckDate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FA8D52A1DEA0354BEF458133 /* Pods-DuckDate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Tests/Pods-DuckDate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FE63B0BB152BD1AE21969120 /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEBD0767A3C38087A0885F36 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */,
+				5D5172D6ADC039CDE6CE83D9 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45BD1F5FDC0AB81C5EDEC1D /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */,
+				38272F49E00BDDB6ED7681B0 /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,12 +178,12 @@
 				D4947958894B3DFF3740F043 /* Pods-DuckDate-DuckDate_Tests.release.xcconfig */,
 				81845EC59B7FBF565FBBEBC0 /* Pods-DuckDate-DuckDate_macOS.debug.xcconfig */,
 				4CC7C151FBB07A5D1A5C3C29 /* Pods-DuckDate-DuckDate_macOS.release.xcconfig */,
-				C21A9783D8D0764985CF14B7 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */,
-				80020BEF26A0566EF8DD9C39 /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */,
 				CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */,
 				6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */,
-				FE63B0BB152BD1AE21969120 /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */,
-				1C6B147583C3659D4B3094A7 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */,
+				F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */,
+				A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */,
+				4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */,
+				F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -239,12 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DuckDate-Tests" */;
 			buildPhases = (
-				7AAB429FAB26604EF8165870 /* [CP] Check Pods Manifest.lock */,
+				7D706084CC1A4FE926A7569B /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				E52C0B22456BA94E6F889642 /* [CP] Embed Pods Frameworks */,
-				265C7F3AF60C3F94847FF5C4 /* [CP] Copy Pods Resources */,
+				6A6C1EC4034B821BE4B8E02A /* [CP] Embed Pods Frameworks */,
+				C986E02DC4FB48F8DF0DA28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,12 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4E89B721D88110E00A3406F /* Build configuration list for PBXNativeTarget "DuckDate-macOS" */;
 			buildPhases = (
-				3F9B9D3CBDAACD520159D1D2 /* [CP] Check Pods Manifest.lock */,
+				5F6A33FE4E5ABEAA0CF71F5D /* [CP] Check Pods Manifest.lock */,
 				B4E89B641D88110E00A3406F /* Sources */,
 				B4E89B651D88110E00A3406F /* Frameworks */,
 				B4E89B661D88110E00A3406F /* Resources */,
-				76BBB715C693C2E8546E535B /* [CP] Embed Pods Frameworks */,
-				91ACDDC38F14693E0279216A /* [CP] Copy Pods Resources */,
+				231EA42D42C8AE629B12054E /* [CP] Embed Pods Frameworks */,
+				0D6947BD09634DAC53705162 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,6 +352,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D6947BD09634DAC53705162 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0DC1BF197194219491630D9F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,22 +397,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		265C7F3AF60C3F94847FF5C4 /* [CP] Copy Pods Resources */ = {
+		231EA42D42C8AE629B12054E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F9B9D3CBDAACD520159D1D2 /* [CP] Check Pods Manifest.lock */ = {
+		5F6A33FE4E5ABEAA0CF71F5D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,6 +425,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6C1EC4034B821BE4B8E02A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72C90644F73464CA19287F17 /* [CP] Check Pods Manifest.lock */ = {
@@ -427,22 +457,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		76BBB715C693C2E8546E535B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7AAB429FAB26604EF8165870 /* [CP] Check Pods Manifest.lock */ = {
+		7D706084CC1A4FE926A7569B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -457,7 +472,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		91ACDDC38F14693E0279216A /* [CP] Copy Pods Resources */ = {
+		C986E02DC4FB48F8DF0DA28E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -469,22 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E52C0B22456BA94E6F889642 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -592,6 +592,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -631,6 +633,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -647,7 +651,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DuckDate-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-iOS";
@@ -665,7 +668,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/DuckDate-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-iOS";
@@ -676,7 +678,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C21A9783D8D0764985CF14B7 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */;
+			baseConfigurationReference = 4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -692,12 +694,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckDate-iOS.app/DuckDate-iOS";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80020BEF26A0566EF8DD9C39 /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */;
+			baseConfigurationReference = F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -709,12 +712,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuckDate-iOS.app/DuckDate-iOS";
 			};
 			name = Release;
 		};
 		B4E89B731D88110E00A3406F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE63B0BB152BD1AE21969120 /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */;
+			baseConfigurationReference = F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -724,7 +728,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				INFOPLIST_FILE = "DuckDate-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -734,7 +737,7 @@
 		};
 		B4E89B741D88110E00A3406F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C6B147583C3659D4B3094A7 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */;
+			baseConfigurationReference = A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -743,7 +746,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DuckDate-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "academy.appdev.DuckDate-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
