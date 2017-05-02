@@ -57,6 +57,18 @@ public extension Date {
     case year
   }
   
+  // MARK: Date to Int
+  
+  /// Digit of current month
+  var month: Int {
+    return Calendar.gregorianCalendar.component(.month, from: self)
+  }
+  
+  /// Represents current year as Int
+  var year: Int {
+    return Calendar.gregorianCalendar.component(.year, from: self)
+  }
+  
   // MARK: Date to String
   
   /// String representation of date with format "dd"
