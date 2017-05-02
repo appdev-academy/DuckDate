@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DuckDate"
-  s.version          = "1.2.0"
+  s.version          = "1.2.1"
   s.summary          = "Date extension for Swift"
   s.homepage         = "https://github.com/appdev-academy/DuckDate.git"
   s.license          = 'MIT'
