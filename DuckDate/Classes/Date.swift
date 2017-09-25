@@ -1,5 +1,5 @@
 //
-//  NSDate.swift
+//  Date.swift
 //  App Dev Academy
 //
 //  Created by App Dev Academy on 09.05.2016
@@ -231,7 +231,7 @@ public extension Date {
   public var plusOneHour: Date {
     return self.addDateComponent(.hour, count: 1)
   }
-	
+  
   /// Increase current date by multiple hours
   ///
   /// - parameter numberOfHours: Number of hours to increase current date
@@ -388,12 +388,12 @@ public extension Date {
   public var endOfWeek: Date {
     return self.endOfCalendarUnit(.weekOfYear)
   }
-
+  
   /// Date at the start of the month
   public var startOfMonth: Date {
     return self.startOfCalendarUnit(.month)
   }
-
+  
   /// Date at the end of the month
   public var endOfMonth: Date {
     return self.endOfCalendarUnit(.month)
@@ -531,7 +531,7 @@ public extension Date {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.weekOfYear, from: date, to: self, options: [])
     return components.weekOfYear!
   }
-
+  
   /// Number of weeks before date
   ///
   /// - parameter date: Date object to compare
