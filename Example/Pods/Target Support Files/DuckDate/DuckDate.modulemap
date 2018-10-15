@@ -1,5 +1,5 @@
 framework module DuckDate {
-  umbrella header "DuckDate-OSX-umbrella.h"
+  umbrella header "DuckDate-umbrella.h"
 
   export *
   module * { export * }
