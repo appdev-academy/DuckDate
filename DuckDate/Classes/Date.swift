@@ -25,7 +25,7 @@ open class DuckDate {
   }
   
   /// First day of the week, be default is Monday
-  open static var firstDayOfTheWeek: Weekday = .monday
+  public static var firstDayOfTheWeek: Weekday = .monday
 }
 
 // MARK: - Calendar extension
