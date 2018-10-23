@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38272F49E00BDDB6ED7681B0 /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A63CBB090293B5E6F3AB9B /* Pods_DuckDate_DuckDate_macOS.framework */; };
-		4E6A414508743E8D30B1FDFB /* Pods_DuckDate_DuckDate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAA494370CD658709A63AE9 /* Pods_DuckDate_DuckDate_iOS.framework */; };
-		5D5172D6ADC039CDE6CE83D9 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */; };
+		14BEC0A78615FDF8B3266DC5 /* Pods_DuckDate_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9654BCCB2089CDC6C10039E /* Pods_DuckDate_Tests.framework */; };
+		51BCE0731EE36D24B5B8DD35 /* Pods_DuckDate_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8631F611ACE2AEB63C9747 /* Pods_DuckDate_macOS.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		6E623E2A7B1069D577A0F569 /* Pods_DuckDate_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 953467BB08E364E73DBF5998 /* Pods_DuckDate_iOS.framework */; };
 		B4C8C9471D8813AD000B005B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C8C93F1D8813AD000B005B /* AppDelegate.swift */; };
 		B4C8C9481D8813AD000B005B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9401D8813AD000B005B /* LaunchScreen.xib */; };
 		B4C8C9491D8813AD000B005B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C8C9421D8813AD000B005B /* Main.storyboard */; };
@@ -32,28 +32,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A2F4D17F3D47DB87EC9E70F /* Pods-DuckDate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Tests/Pods-DuckDate_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0135E309C721605C9980A5B3 /* Pods-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-Tests/Pods-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0F7312DF1271925B2CABC8FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		10D60BB751F6544BEB82C9C2 /* DuckDate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DuckDate.podspec; path = ../DuckDate.podspec; sourceTree = "<group>"; };
-		218CDB5BE3701E6B85B2CF86 /* Pods-DuckDate-DuckDate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Tests/Pods-DuckDate-DuckDate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CC7C151FBB07A5D1A5C3C29 /* Pods-DuckDate-DuckDate_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_macOS/Pods-DuckDate-DuckDate_macOS.release.xcconfig"; sourceTree = "<group>"; };
-		513A2E892143E7483731D521 /* Pods_DuckDate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10D60BB751F6544BEB82C9C2 /* DuckDate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DuckDate.podspec; path = ../DuckDate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		18AE3F629064691D5A04FF4B /* Pods-DuckDate-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-macOS/Pods-DuckDate-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2BAEB48245926294F4DCD473 /* Pods-DuckDate-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-iOS/Pods-DuckDate-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* DuckDate-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DuckDate-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* DuckDate-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DuckDate-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		61A63CBB090293B5E6F3AB9B /* Pods_DuckDate_DuckDate_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62DF4D5C141790DC90751827 /* Pods-DuckDate-DuckDate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Example/Pods-DuckDate-DuckDate_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		7C8778BC3F4E0FEDBE407C26 /* Pods-DuckDate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Example/Pods-DuckDate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81845EC59B7FBF565FBBEBC0 /* Pods-DuckDate-DuckDate_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_macOS/Pods-DuckDate-DuckDate_macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8564FA679C85DB8B446C56C1 /* Pods-DuckDate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Example/Pods-DuckDate_Example.release.xcconfig"; sourceTree = "<group>"; };
-		96567341BD1081D090C11D64 /* Pods_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		953467BB08E364E73DBF5998 /* Pods_DuckDate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99588255DF48CA7DB6A57622 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		AFAA494370CD658709A63AE9 /* Pods_DuckDate_DuckDate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C8C93F1D8813AD000B005B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C8C9411D8813AD000B005B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B4C8C9431D8813AD000B005B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,13 +54,11 @@
 		B4E89B6C1D88110E00A3406F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E89B6F1D88110E00A3406F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B4E89B711D88110E00A3406F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5827A743FEE99DE7DCD6DD7 /* Pods_DuckDate_DuckDate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_DuckDate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAA9D3EF76C3D1ECA5444571 /* Pods-DuckDate-DuckDate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Example/Pods-DuckDate-DuckDate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D4947958894B3DFF3740F043 /* Pods-DuckDate-DuckDate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate_Tests/Pods-DuckDate-DuckDate_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-DuckDate-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FA8D52A1DEA0354BEF458133 /* Pods-DuckDate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate_Tests/Pods-DuckDate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB3E59DFA48D78D6CB0D369C /* Pods-DuckDate-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-macOS/Pods-DuckDate-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		CA8631F611ACE2AEB63C9747 /* Pods_DuckDate_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9654BCCB2089CDC6C10039E /* Pods_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDF14430C4474EC0B2E1989C /* Pods-DuckDate-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-iOS/Pods-DuckDate-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CF7E213C4D6C731A675E09 /* Pods-DuckDate-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DuckDate-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DuckDate-Tests/Pods-DuckDate-Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E6A414508743E8D30B1FDFB /* Pods_DuckDate_DuckDate_iOS.framework in Frameworks */,
+				6E623E2A7B1069D577A0F569 /* Pods_DuckDate_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5172D6ADC039CDE6CE83D9 /* Pods_DuckDate_DuckDate_Tests.framework in Frameworks */,
+				14BEC0A78615FDF8B3266DC5 /* Pods_DuckDate_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38272F49E00BDDB6ED7681B0 /* Pods_DuckDate_DuckDate_macOS.framework in Frameworks */,
+				51BCE0731EE36D24B5B8DD35 /* Pods_DuckDate_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,12 +92,9 @@
 		51D1F40753FF8E73824E9B3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				513A2E892143E7483731D521 /* Pods_DuckDate_Example.framework */,
-				96567341BD1081D090C11D64 /* Pods_DuckDate_Tests.framework */,
-				B5827A743FEE99DE7DCD6DD7 /* Pods_DuckDate_DuckDate_Example.framework */,
-				84BAAAFDB393CBFC9151DC84 /* Pods_DuckDate_DuckDate_Tests.framework */,
-				61A63CBB090293B5E6F3AB9B /* Pods_DuckDate_DuckDate_macOS.framework */,
-				AFAA494370CD658709A63AE9 /* Pods_DuckDate_DuckDate_iOS.framework */,
+				D9654BCCB2089CDC6C10039E /* Pods_DuckDate_Tests.framework */,
+				953467BB08E364E73DBF5998 /* Pods_DuckDate_iOS.framework */,
+				CA8631F611ACE2AEB63C9747 /* Pods_DuckDate_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,22 +152,12 @@
 		7C043D61AF74B2F90C76135E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C8778BC3F4E0FEDBE407C26 /* Pods-DuckDate_Example.debug.xcconfig */,
-				8564FA679C85DB8B446C56C1 /* Pods-DuckDate_Example.release.xcconfig */,
-				FA8D52A1DEA0354BEF458133 /* Pods-DuckDate_Tests.debug.xcconfig */,
-				0A2F4D17F3D47DB87EC9E70F /* Pods-DuckDate_Tests.release.xcconfig */,
-				BAA9D3EF76C3D1ECA5444571 /* Pods-DuckDate-DuckDate_Example.debug.xcconfig */,
-				62DF4D5C141790DC90751827 /* Pods-DuckDate-DuckDate_Example.release.xcconfig */,
-				218CDB5BE3701E6B85B2CF86 /* Pods-DuckDate-DuckDate_Tests.debug.xcconfig */,
-				D4947958894B3DFF3740F043 /* Pods-DuckDate-DuckDate_Tests.release.xcconfig */,
-				81845EC59B7FBF565FBBEBC0 /* Pods-DuckDate-DuckDate_macOS.debug.xcconfig */,
-				4CC7C151FBB07A5D1A5C3C29 /* Pods-DuckDate-DuckDate_macOS.release.xcconfig */,
-				CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */,
-				6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */,
-				F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */,
-				A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */,
-				4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */,
-				F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */,
+				0135E309C721605C9980A5B3 /* Pods-DuckDate-Tests.debug.xcconfig */,
+				E2CF7E213C4D6C731A675E09 /* Pods-DuckDate-Tests.release.xcconfig */,
+				DDF14430C4474EC0B2E1989C /* Pods-DuckDate-iOS.debug.xcconfig */,
+				2BAEB48245926294F4DCD473 /* Pods-DuckDate-iOS.release.xcconfig */,
+				18AE3F629064691D5A04FF4B /* Pods-DuckDate-macOS.debug.xcconfig */,
+				BB3E59DFA48D78D6CB0D369C /* Pods-DuckDate-macOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -355,8 +329,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DuckDate/DuckDate.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DuckDate-iOS/Pods-DuckDate-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DuckDate-iOS/DuckDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -364,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-iOS/Pods-DuckDate-DuckDate-iOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuckDate-iOS/Pods-DuckDate-iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		231EA42D42C8AE629B12054E /* [CP] Embed Pods Frameworks */ = {
@@ -373,8 +347,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DuckDate/DuckDate.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DuckDate-macOS/Pods-DuckDate-macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DuckDate-macOS/DuckDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -382,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-macOS/Pods-DuckDate-DuckDate-macOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuckDate-macOS/Pods-DuckDate-macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5F6A33FE4E5ABEAA0CF71F5D /* [CP] Check Pods Manifest.lock */ = {
@@ -396,7 +370,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DuckDate-DuckDate-macOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DuckDate-macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,8 +383,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DuckDate/DuckDate.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DuckDate-Tests/Pods-DuckDate-Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DuckDate-iOS/DuckDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -418,7 +392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DuckDate-DuckDate-Tests/Pods-DuckDate-DuckDate-Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DuckDate-Tests/Pods-DuckDate-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		72C90644F73464CA19287F17 /* [CP] Check Pods Manifest.lock */ = {
@@ -432,7 +406,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DuckDate-DuckDate-iOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DuckDate-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -450,7 +424,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DuckDate-DuckDate-Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DuckDate-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -634,7 +608,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE221512BFD019392F17203 /* Pods-DuckDate-DuckDate-iOS.debug.xcconfig */;
+			baseConfigurationReference = DDF14430C4474EC0B2E1989C /* Pods-DuckDate-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -652,7 +626,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CA93A5858BDD8AE63E4EB2B /* Pods-DuckDate-DuckDate-iOS.release.xcconfig */;
+			baseConfigurationReference = 2BAEB48245926294F4DCD473 /* Pods-DuckDate-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -670,7 +644,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4538D6A726B62F2B8DE85B93 /* Pods-DuckDate-DuckDate-Tests.debug.xcconfig */;
+			baseConfigurationReference = 0135E309C721605C9980A5B3 /* Pods-DuckDate-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -693,7 +667,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9E587460FF739E163DCB4FF /* Pods-DuckDate-DuckDate-Tests.release.xcconfig */;
+			baseConfigurationReference = E2CF7E213C4D6C731A675E09 /* Pods-DuckDate-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -712,7 +686,7 @@
 		};
 		B4E89B731D88110E00A3406F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4694EFD72132FC384CE98EE /* Pods-DuckDate-DuckDate-macOS.debug.xcconfig */;
+			baseConfigurationReference = 18AE3F629064691D5A04FF4B /* Pods-DuckDate-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -732,7 +706,7 @@
 		};
 		B4E89B741D88110E00A3406F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6D92A52D73E84B695656821 /* Pods-DuckDate-DuckDate-macOS.release.xcconfig */;
+			baseConfigurationReference = BB3E59DFA48D78D6CB0D369C /* Pods-DuckDate-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

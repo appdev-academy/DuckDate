@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DuckDate_DuckDate_macOSVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DuckDate_DuckDate_macOSVersionString[];
+FOUNDATION_EXPORT double Pods_DuckDate_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DuckDate_TestsVersionString[];
 

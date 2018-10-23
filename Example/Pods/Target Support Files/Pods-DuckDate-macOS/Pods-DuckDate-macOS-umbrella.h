@@ -1,5 +1,5 @@
 #ifdef __OBJC__
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 #else
 #ifndef FOUNDATION_EXPORT
 #if defined(__cplusplus)
@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DuckDate_DuckDate_iOSVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DuckDate_DuckDate_iOSVersionString[];
+FOUNDATION_EXPORT double Pods_DuckDate_macOSVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_DuckDate_macOSVersionString[];
 

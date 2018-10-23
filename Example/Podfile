@@ -1,10 +1,16 @@
-platform :ios, '8.0'
 use_frameworks!
 
-abstract_target "DuckDate" do
+target 'DuckDate-iOS' do
+  platform :ios, '8.0'
   pod 'DuckDate', :path => '..'
-  
-  target 'DuckDate-iOS'
-  target 'DuckDate-macOS'
-  target 'DuckDate-Tests'
+end
+
+target 'DuckDate-Tests' do
+  platform :ios, '8.0'
+  pod 'DuckDate', :path => '..'
+end
+
+target 'DuckDate-macOS' do
+  platform :osx, '10.11'
+  pod 'DuckDate', :path => '..'
 end
