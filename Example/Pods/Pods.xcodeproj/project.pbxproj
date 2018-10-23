@@ -52,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		010A989B1E10A2E81CBB70F439DAB394 /* DuckDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DuckDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		010A989B1E10A2E81CBB70F439DAB394 /* DuckDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DuckDate.framework; path = "DuckDate-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06790296BBBE95020E0C2FC0506B8E3B /* DuckDate-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "DuckDate-macOS.modulemap"; path = "../DuckDate-macOS/DuckDate-macOS.modulemap"; sourceTree = "<group>"; };
 		08FB2BC0E84DAC6E41FD729C2DE5FE93 /* Pods-DuckDate-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckDate-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		0B4E1875E9C8A2B6DB7283B5A08C2A73 /* DuckDate-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "DuckDate-iOS.modulemap"; sourceTree = "<group>"; };
@@ -64,12 +64,12 @@
 		36266B4C2FEF3D70E8484C5235FDFDD5 /* Pods-DuckDate-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckDate-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B749896519810DEB4BF2DF2608E2A13 /* Pods-DuckDate-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DuckDate-iOS-frameworks.sh"; sourceTree = "<group>"; };
 		406A10F098967B08708327A760A3B3A3 /* Pods-DuckDate-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DuckDate-iOS-Info.plist"; sourceTree = "<group>"; };
-		40792A1FCA071CF0C20BF284464F9AB3 /* DuckDate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DuckDate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		40792A1FCA071CF0C20BF284464F9AB3 /* DuckDate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DuckDate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		40B5CD7FDF7EAEC847C8520E511093A4 /* DuckDate-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DuckDate-iOS-prefix.pch"; sourceTree = "<group>"; };
-		40E002505BCB0899A3B57CBC9CDF7E24 /* DuckDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DuckDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E002505BCB0899A3B57CBC9CDF7E24 /* DuckDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DuckDate.framework; path = "DuckDate-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4592698D1906FB7FA1D06894471FC502 /* DuckDate-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "DuckDate-macOS.xcconfig"; path = "../DuckDate-macOS/DuckDate-macOS.xcconfig"; sourceTree = "<group>"; };
-		47A55AC9FB3CD6080D6788E38495EA48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		51E871A23B25467B3A35BACA53025974 /* Pods_DuckDate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47A55AC9FB3CD6080D6788E38495EA48 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		51E871A23B25467B3A35BACA53025974 /* Pods_DuckDate_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DuckDate_iOS.framework; path = "Pods-DuckDate-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5233B1ED6D499AF0B99F2246F87C2336 /* DuckDate-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DuckDate-iOS-Info.plist"; sourceTree = "<group>"; };
 		593826E5E4A7F42916D73D02E519C63F /* Pods-DuckDate-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DuckDate-iOS.modulemap"; sourceTree = "<group>"; };
 		5A4E7CA552416D7B675166DA40C82178 /* DuckDate-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DuckDate-iOS.xcconfig"; sourceTree = "<group>"; };
@@ -87,13 +87,13 @@
 		A15D07247F9D134675B430F2782FD515 /* Pods-DuckDate-Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DuckDate-Tests-umbrella.h"; sourceTree = "<group>"; };
 		A20708B584FA1F91928DE3883039FA10 /* Pods-DuckDate-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DuckDate-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A93CD459FAE8D56DC252F67B873498FA /* DuckDate-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DuckDate-macOS-prefix.pch"; path = "../DuckDate-macOS/DuckDate-macOS-prefix.pch"; sourceTree = "<group>"; };
-		AE63EAF64F503847FE1C10EA9A5DA5BE /* Pods_DuckDate_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE63EAF64F503847FE1C10EA9A5DA5BE /* Pods_DuckDate_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DuckDate_macOS.framework; path = "Pods-DuckDate-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B120A5C5674C1AD9A719C9266827A53C /* Pods-DuckDate-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DuckDate-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B3292CAE8D3DCDF7F5B29D1F836A6D36 /* Pods-DuckDate-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckDate-macOS.release.xcconfig"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B63E59E6E9DDC450D7681EEB77052EC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		B73E69D08C10893C8D0EF1C9D7E28399 /* Pods_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DuckDate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF4B2A89542F3A6B777A9FBBF09688B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B73E69D08C10893C8D0EF1C9D7E28399 /* Pods_DuckDate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DuckDate_Tests.framework; path = "Pods-DuckDate-Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF4B2A89542F3A6B777A9FBBF09688B3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C54600BA977AEBE78C9D8536BC126EB7 /* Pods-DuckDate-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DuckDate-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CA8016164F5F798DDA420D68D5DF763F /* Pods-DuckDate-macOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DuckDate-macOS-frameworks.sh"; sourceTree = "<group>"; };
 		D84CCE24AD31CE510568A352CAD37F5D /* DuckDate-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DuckDate-iOS-umbrella.h"; sourceTree = "<group>"; };
@@ -456,7 +456,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -638,7 +638,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -681,6 +682,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4592698D1906FB7FA1D06894471FC502 /* DuckDate-macOS.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -747,6 +749,7 @@
 			baseConfigurationReference = B3292CAE8D3DCDF7F5B29D1F836A6D36 /* Pods-DuckDate-macOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -880,6 +883,7 @@
 			baseConfigurationReference = C54600BA977AEBE78C9D8536BC126EB7 /* Pods-DuckDate-macOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -914,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4592698D1906FB7FA1D06894471FC502 /* DuckDate-macOS.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
