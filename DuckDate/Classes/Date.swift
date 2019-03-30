@@ -33,7 +33,7 @@ open class DuckDate {
 public extension Calendar {
   
   /// Returns Gregorian NSCalendar instance
-  public static var gregorianCalendar: Calendar {
+  static var gregorianCalendar: Calendar {
     var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
     calendar.firstWeekday = DuckDate.firstDayOfTheWeek.rawValue
     return calendar
@@ -45,7 +45,7 @@ public extension Calendar {
 /// NSDate extension with handy helpers to work with dates
 /// WARNING: This library works only with Gregorian calendar
 public extension Date {
-  
+
   /// Enumeration of available date components
   internal enum DateComponent {
     case second
@@ -72,42 +72,42 @@ public extension Date {
   // MARK: Date to String
   
   /// String representation of date with format "dd"
-  public var dayNumberString: String {
+  var dayNumberString: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "dd"
     return dateFormatter.string(from: self)
   }
   
   /// String representation of date with format "yyyy"
-  public var yearString: String {
+  var yearString: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy"
     return dateFormatter.string(from: self)
   }
   
   /// String representation of date with format "MM"
-  public var monthNumberString: String {
+  var monthNumberString: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MM"
     return dateFormatter.string(from: self)
   }
   
   /// String representation of date with format "LLLL"
-  public var monthName: String {
+  var monthName: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "LLLL"
     return dateFormatter.string(from: self)
   }
   
   /// String representation of date with format "yyyy-MM-dd"
-  public var shortDateString: String {
+  var shortDateString: String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
     return dateFormatter.string(from: self)
   }
   
   /// Get suffix of the day for date
-  public var daySuffix: String {
+  var daySuffix: String {
     let calendar = Calendar.current
     let dayOfMonth = calendar.component(.day, from: self)
     
@@ -126,7 +126,7 @@ public extension Date {
   /// - parameter calendarUnit: NSCalendar.Unit value
   ///
   /// - returns: Date
-  public func startOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
+  func startOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
     var startDate: NSDate?
     (Calendar.gregorianCalendar as NSCalendar).range(of: calendarUnit, start: &startDate, interval: nil, for: self)
     return startDate! as Date
@@ -137,7 +137,7 @@ public extension Date {
   /// - parameter calendarUnit: NSCalendar.Unit value
   ///
   /// - returns: Date
-  public func endOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
+  func endOfCalendarUnit(_ calendarUnit: NSCalendar.Unit) -> Date {
     var startDate: NSDate?
     var timeInterval: TimeInterval = 0
     (Calendar.gregorianCalendar as NSCalendar).range(of: calendarUnit, start: &startDate, interval: &timeInterval, for: self)
@@ -176,7 +176,7 @@ public extension Date {
   // MARK: Add or remove DateComponent
   
   /// One second after current date
-  public var plusOneSecond: Date {
+  var plusOneSecond: Date {
     return self.addDateComponent(.second, count: 1)
   }
   
@@ -184,12 +184,12 @@ public extension Date {
   ///
   /// - Parameter numberOfSeconds: Number of seconds to increase current date
   /// - Returns: Updated date
-  public func plusSeconds(_ numberOfSeconds: Int) -> Date {
+  func plusSeconds(_ numberOfSeconds: Int) -> Date {
     return self.addDateComponent(.second, count: numberOfSeconds)
   }
   
   /// One second before current date
-  public var minusOneSecond: Date {
+  var minusOneSecond: Date {
     return self.addDateComponent(.second, count: -1)
   }
   
@@ -197,12 +197,12 @@ public extension Date {
   ///
   /// - Parameter numberOfSeconds: Number of seconds to decrease current date
   /// - Returns: Updated date
-  public func minusSeconds(_ numberOfSeconds: Int) -> Date {
+  func minusSeconds(_ numberOfSeconds: Int) -> Date {
     return self.addDateComponent(.second, count: -numberOfSeconds)
   }
   
   /// One minute after current date
-  public var plusOneMinute: Date {
+  var plusOneMinute: Date {
     return self.addDateComponent(.minute, count: 1)
   }
   
@@ -210,12 +210,12 @@ public extension Date {
   ///
   /// - Parameter numberOfMinutes: Number of minutes to increase current date
   /// - Returns: Updated date
-  public func plusMinutes(_ numberOfMinutes: Int) -> Date {
+  func plusMinutes(_ numberOfMinutes: Int) -> Date {
     return self.addDateComponent(.minute, count: numberOfMinutes)
   }
   
   /// One minute before current date
-  public var minusOneMinute: Date {
+  var minusOneMinute: Date {
     return self.addDateComponent(.minute, count: -1)
   }
   
@@ -223,12 +223,12 @@ public extension Date {
   ///
   /// - Parameter numberOfMinutes: Number of minutes to decrease current date
   /// - Returns: Updated date
-  public func minusMinutes(_ numberOfMinutes: Int) -> Date {
+  func minusMinutes(_ numberOfMinutes: Int) -> Date {
     return self.addDateComponent(.minute, count: -numberOfMinutes)
   }
   
   /// One hour after current date
-  public var plusOneHour: Date {
+  var plusOneHour: Date {
     return self.addDateComponent(.hour, count: 1)
   }
   
@@ -237,12 +237,12 @@ public extension Date {
   /// - parameter numberOfHours: Number of hours to increase current date
   ///
   /// - returns: Updated date
-  public func plusHours(_ numberOfHours: Int) -> Date {
+  func plusHours(_ numberOfHours: Int) -> Date {
     return self.addDateComponent(.hour, count: numberOfHours)
   }
   
   /// One hour before current date
-  public var minusOneHour: Date {
+  var minusOneHour: Date {
     return self.addDateComponent(.hour, count: -1)
   }
   
@@ -251,12 +251,12 @@ public extension Date {
   /// - parameter numberOfHours: Number of hours to decrease current date
   ///
   /// - returns: Updated date
-  public func minusHours(_ numberOfHours: Int) -> Date {
+  func minusHours(_ numberOfHours: Int) -> Date {
     return self.addDateComponent(.hour, count: -numberOfHours)
   }
   
   /// One day after current date
-  public var plusOneDay: Date {
+  var plusOneDay: Date {
     return self.addDateComponent(.day, count: 1)
   }
   
@@ -265,12 +265,12 @@ public extension Date {
   /// - parameter numberOfDays: Number of days to increase current date
   ///
   /// - returns: Updated date
-  public func plusDays(_ numberOfDays: Int) -> Date {
+  func plusDays(_ numberOfDays: Int) -> Date {
     return self.addDateComponent(.day, count: numberOfDays)
   }
   
   /// One day before current date
-  public var minusOneDay: Date {
+  var minusOneDay: Date {
     return self.addDateComponent(.day, count: -1)
   }
   
@@ -279,12 +279,12 @@ public extension Date {
   /// - parameter numberOfDays: Number of days to decrease current date
   ///
   /// - returns: Updated date
-  public func minusDays(_ numberOfDays: Int) -> Date {
+  func minusDays(_ numberOfDays: Int) -> Date {
     return self.addDateComponent(.day, count: -numberOfDays)
   }
   
   /// One week after current date
-  public var plusOneWeek: Date {
+  var plusOneWeek: Date {
     return self.addDateComponent(.week, count: 1)
   }
   
@@ -293,12 +293,12 @@ public extension Date {
   /// - parameter numberOfWeeks: Number of weeks to increase current date
   ///
   /// - returns: Updated date
-  public func plusWeeks(_ numberOfWeeks: Int) -> Date {
+  func plusWeeks(_ numberOfWeeks: Int) -> Date {
     return self.addDateComponent(.week, count: numberOfWeeks)
   }
   
   /// One week before current date
-  public var minusOneWeek: Date {
+  var minusOneWeek: Date {
     return self.addDateComponent(.week, count: -1)
   }
   
@@ -307,12 +307,12 @@ public extension Date {
   /// - parameter numberOfWeeks: Number of weeks to decrease current date
   ///
   /// - returns: Updated date
-  public func minusWeeks(_ numberOfWeeks: Int) -> Date {
+  func minusWeeks(_ numberOfWeeks: Int) -> Date {
     return self.addDateComponent(.week, count: -numberOfWeeks)
   }
   
   /// One month after current date
-  public var plusOneMonth: Date {
+  var plusOneMonth: Date {
     return self.addDateComponent(.month, count: 1)
   }
   
@@ -321,12 +321,12 @@ public extension Date {
   /// - parameter numberOfMonths: Number of months to increase current date
   ///
   /// - returns: Updated date
-  public func plusMonths(_ numberOfMonths: Int) -> Date {
+  func plusMonths(_ numberOfMonths: Int) -> Date {
     return self.addDateComponent(.month, count: numberOfMonths)
   }
   
   /// One month before current date
-  public var minusOneMonth: Date {
+  var minusOneMonth: Date {
     return self.addDateComponent(.month, count: -1)
   }
   
@@ -335,12 +335,12 @@ public extension Date {
   /// - parameter numberOfMonths: Number of months to decrease current date
   ///
   /// - returns: Updated date
-  public func minusMonths(_ numberOfMonths: Int) -> Date {
+  func minusMonths(_ numberOfMonths: Int) -> Date {
     return self.addDateComponent(.month, count: -numberOfMonths)
   }
   
   /// One year after current date
-  public var plusOneYear: Date {
+  var plusOneYear: Date {
     return self.addDateComponent(.year, count: 1)
   }
   
@@ -349,12 +349,12 @@ public extension Date {
   /// - parameter numberOfYears: Number of years to increase current date
   ///
   /// - returns: Updated date
-  public func plusYears(_ numberOfYears: Int) -> Date {
+  func plusYears(_ numberOfYears: Int) -> Date {
     return self.addDateComponent(.year, count: numberOfYears)
   }
   
   /// One year before current date
-  public var minusOneYear: Date {
+  var minusOneYear: Date {
     return self.addDateComponent(.year, count: -1)
   }
   
@@ -363,49 +363,49 @@ public extension Date {
   /// - parameter numberOfYears: Number of years to decrease current date
   ///
   /// - returns: Updated date
-  public func minusYears(_ numberOfYears: Int) -> Date {
+  func minusYears(_ numberOfYears: Int) -> Date {
     return self.addDateComponent(.year, count: -numberOfYears)
   }
   
   // MARK: Start/end of the day, week, month, year
   
   /// Date at the start of the day
-  public var startOfDay: Date {
+  var startOfDay: Date {
     return self.startOfCalendarUnit(.day)
   }
   
   /// Date at the end of the day
-  public var endOfDay: Date {
+  var endOfDay: Date {
     return self.endOfCalendarUnit(.day)
   }
   
   /// Date at the start of the week
-  public var startOfWeek: Date {
+  var startOfWeek: Date {
     return self.startOfCalendarUnit(.weekOfYear)
   }
   
   /// Date at the end of the week
-  public var endOfWeek: Date {
+  var endOfWeek: Date {
     return self.endOfCalendarUnit(.weekOfYear)
   }
   
   /// Date at the start of the month
-  public var startOfMonth: Date {
+  var startOfMonth: Date {
     return self.startOfCalendarUnit(.month)
   }
   
   /// Date at the end of the month
-  public var endOfMonth: Date {
+  var endOfMonth: Date {
     return self.endOfCalendarUnit(.month)
   }
   
   /// Date at the start of the year
-  public var startOfYear: Date {
+  var startOfYear: Date {
     return self.startOfCalendarUnit(.year)
   }
   
   /// Date at the end of the year
-  public var endOfYear: Date {
+  var endOfYear: Date {
     return self.endOfCalendarUnit(.year)
   }
   
@@ -417,7 +417,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func isAfterDate(_ date: Date) -> Bool {
+  func isAfterDate(_ date: Date) -> Bool {
     return self.compare(date) == .orderedDescending
   }
   
@@ -427,7 +427,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func isGreaterThanDate(_ date: Date) -> Bool {
+  func isGreaterThanDate(_ date: Date) -> Bool {
     return self.isAfterDate(date)
   }
   
@@ -437,7 +437,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func isOnOrAfterDate(_ date: Date) -> Bool {
+  func isOnOrAfterDate(_ date: Date) -> Bool {
     return self.compare(date) == .orderedDescending || self.compare(date) == .orderedSame
   }
   
@@ -447,7 +447,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func isGreaterOrEqualToDate(_ date: Date) -> Bool {
+  func isGreaterOrEqualToDate(_ date: Date) -> Bool {
     return self.isOnOrAfterDate(date)
   }
   
@@ -457,7 +457,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func isBeforeDate(_ date: Date) -> Bool {
+  func isBeforeDate(_ date: Date) -> Bool {
     return self.compare(date) == .orderedAscending
   }
   
@@ -467,7 +467,7 @@ public extension Date {
   /// - parameter date: Date to compare
   ///
   /// - returns: Bool
-  public func isLessThanDate(_ date: Date) -> Bool {
+  func isLessThanDate(_ date: Date) -> Bool {
     return self.isBeforeDate(date)
   }
   
@@ -477,7 +477,7 @@ public extension Date {
   /// - parameter date: Date to compare
   ///
   /// - returns: Bool
-  public func isOnOrBeforeDate(_ date: Date) -> Bool {
+  func isOnOrBeforeDate(_ date: Date) -> Bool {
     return self.compare(date) == .orderedAscending || self.compare(date) == .orderedSame
   }
   
@@ -487,7 +487,7 @@ public extension Date {
   /// - parameter date: Date to compare
   ///
   /// - returns: Bool
-  public func isLessOrEqualToDate(_ date: Date) -> Bool {
+  func isLessOrEqualToDate(_ date: Date) -> Bool {
     return self.isOnOrBeforeDate(date)
   }
   
@@ -496,7 +496,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Bool
-  public func equalToDate(_ date: Date) -> Bool {
+  func equalToDate(_ date: Date) -> Bool {
     return self.compare(date) == ComparisonResult.orderedSame
   }
   
@@ -507,7 +507,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func daysSinceDate(_ date: Date) -> Int {
+  func daysSinceDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.day, from: date, to: self, options: [])
     return components.day!
   }
@@ -517,7 +517,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func daysBeforeDate(_ date: Date) -> Int {
+  func daysBeforeDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.day, from: self, to: date, options: [])
     return components.day!
   }
@@ -527,7 +527,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func weeksSinceDate(_ date: Date) -> Int {
+  func weeksSinceDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.weekOfYear, from: date, to: self, options: [])
     return components.weekOfYear!
   }
@@ -537,7 +537,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func weeksBeforeDate(_ date: Date) -> Int {
+  func weeksBeforeDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.weekOfYear, from: self, to: date, options: [])
     return components.weekOfYear!
   }
@@ -547,7 +547,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func monthsSinceDate(_ date: Date) -> Int {
+  func monthsSinceDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.month, from: date, to: self, options: [])
     return components.month!
   }
@@ -557,7 +557,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func monthsBeforeDate(_ date: Date) -> Int {
+  func monthsBeforeDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.month, from: self, to: date, options: [])
     return components.month!
   }
@@ -567,7 +567,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func yearsSinceDate(_ date: Date) -> Int {
+  func yearsSinceDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.year, from: date, to: self, options: [])
     return components.year!
   }
@@ -577,7 +577,7 @@ public extension Date {
   /// - parameter date: Date object to compare
   ///
   /// - returns: Int
-  public func yearsBeforeDate(_ date: Date) -> Int {
+  func yearsBeforeDate(_ date: Date) -> Int {
     let components = (Calendar.gregorianCalendar as NSCalendar).components(NSCalendar.Unit.year, from: self, to: date, options: [])
     return components.year!
   }
