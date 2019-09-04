@@ -1,6 +1,6 @@
 {
   "name": "DuckDate",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "summary": "Date extension for Swift",
   "homepage": "https://github.com/appdev-academy/DuckDate.git",
   "license": "MIT",
@@ -10,13 +10,15 @@
   },
   "source": {
     "git": "https://github.com/appdev-academy/DuckDate.git",
-    "tag": "1.3.0"
+    "tag": "1.3.1"
   },
   "social_media_url": "https://twitter.com/AppDev_Academy",
   "platforms": {
     "ios": "8.0",
     "osx": "10.11"
   },
+  "swift_versions": "5.0",
   "source_files": "DuckDate/Classes/**/*",
-  "frameworks": "Foundation"
+  "frameworks": "Foundation",
+  "swift_version": "5.0"
 }
